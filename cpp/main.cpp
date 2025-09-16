@@ -2,7 +2,6 @@
 #include <vector>
 using namespace std;
 
-// "include" langsung cpp (biar tanpa .h)
 #include "TokoElektronik.cpp"
 
 vector<TokoElektronik> daftarProduk;
@@ -102,7 +101,7 @@ void cariProduk() {
 int main() {
     int pilihan;
     do {
-        cout << "\n=== MENU TOKO ELEKTRONIK ===\n";
+        cout << "\n<<< DATA TOKO ELEKTRONIK >>>\n";
         cout << "1. Tambah Produk\n";
         cout << "2. Tampilkan Produk\n";
         cout << "3. Update Produk\n";
@@ -118,7 +117,7 @@ int main() {
             case 3: updateProduk(); break;
             case 4: hapusProduk(); break;
             case 5: cariProduk(); break;
-            case 0: cout << "Keluar program...\n"; break;
+            case 0: cout << "Keluar \n"; break;
             default: cout << "Pilihan tidak valid!\n"; break;
         }
     } while (pilihan != 0);
